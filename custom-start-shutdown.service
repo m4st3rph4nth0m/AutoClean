@@ -1,0 +1,10 @@
+[Unit]
+Description=Ejecuta el script para borrar los archivos temporales
+
+[Service]
+Type=oneshot
+ExecStart=-/usr/lib/systemd/scripts/custom-start.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
